@@ -6,9 +6,7 @@ import DashboardAnalytics from "../pages/DashboardAnalytics";
 import DashboardCrm from "../pages/DashboardCrm";
 import DashboardEcommerce from "../pages/DashboardEcommerce";
 import DashboardJob from "../pages/DashboardJob/";
-import DashboardCrypto from "../pages/DashboardCrypto";
 import DashboardProject from "../pages/DashboardProject";
-import DashboardNFT from "../pages/DashboardNFT";
 
 //Calendar
 import Calendar from "../pages/Calendar/Maincalender";
@@ -30,14 +28,6 @@ import CreateProject from "../pages/Projects/CreateProject";
 //Task
 import TaskDetails from "../pages/Tasks/TaskDetails";
 import TaskList from "../pages/Tasks/TaskList";
-
-//Transactions
-import Transactions from '../pages/Crypto/Transactions';
-import BuySell from '../pages/Crypto/BuySell';
-import CryproOrder from '../pages/Crypto/CryptoOrder';
-import MyWallet from '../pages/Crypto/MyWallet';
-import ICOList from '../pages/Crypto/ICOList';
-import KYCVerification from '../pages/Crypto/KYCVerification';
 
 //Crm Pages
 import CrmCompanies from "../pages/Crm/CrmCompanies";
@@ -65,17 +55,6 @@ import EcommerceCart from "../pages/Ecommerce/EcommerceCart";
 import EcommerceCheckout from "../pages/Ecommerce/EcommerceCheckout";
 import EcommerceSellers from "../pages/Ecommerce/EcommerceSellers/index";
 import EcommerceSellerDetail from "../pages/Ecommerce/EcommerceSellers/EcommerceSellerDetail";
-
-// NFT Marketplace Pages
-import Marketplace from "../pages/NFTMarketplace/Marketplace";
-import Collections from "../pages/NFTMarketplace/Collections";
-import CreateNFT from "../pages/NFTMarketplace/CreateNFT";
-import Creators from "../pages/NFTMarketplace/Creators";
-import ExploreNow from "../pages/NFTMarketplace/ExploreNow";
-import ItemDetails from "../pages/NFTMarketplace/Itemdetails";
-import LiveAuction from "../pages/NFTMarketplace/LiveAuction";
-import Ranking from "../pages/NFTMarketplace/Ranking";
-import WalletConnect from "../pages/NFTMarketplace/WalletConnect";
 
 // Base Ui
 import UiAlerts from "../pages/BaseUi/UiAlerts/UiAlerts";
@@ -133,7 +112,6 @@ import Select2 from "../pages/Forms/Select2/Select2";
 import BasicTables from '../pages/Tables/BasicTables/BasicTables';
 import ListTables from '../pages/Tables/ListTables/ListTables';
 import ReactTable from "../pages/Tables/ReactTables";
-
 
 //Icon pages
 import RemixIcons from "../pages/Icons/RemixIcons/RemixIcons";
@@ -213,17 +191,6 @@ import PolarCharts from "../pages/Charts/ApexCharts/PolarCharts";
 import ChartsJs from "../pages/Charts/ChartsJs/index";
 import Echarts from "../pages/Charts/ECharts/index";
 
-//Job pages
-import Statistics from "../pages/Jobs/Statistics";
-import JobList from "../pages/Jobs/JobList/List";
-import JobGrid from "../pages/Jobs/JobList/Grid";
-import JobOverview from "../pages/Jobs/JobList/Overview";
-import CandidateList from "../pages/Jobs/CandidateList/ListView";
-import CandidateGrid from "../pages/Jobs/CandidateList/GridView";
-import NewJobs from "../pages/Jobs/NewJob";
-import JobCategories from "../pages/Jobs/JobCategories";
-import Application from "../pages/Jobs/Application";
-import CompaniesList from "../pages/Jobs/CompaniesList";
 
 //APi Key
 import APIKey from "../pages/APIKey/index";
@@ -252,9 +219,7 @@ const authProtectedRoutes = [
   { path: "/dashboard-crm", component: <DashboardCrm /> },
   { path: "/dashboard", component: <DashboardEcommerce /> },
   { path: "/index", component: <DashboardEcommerce /> },
-  { path: "/dashboard-crypto", component: <DashboardCrypto /> },
   { path: "/dashboard-projects", component: <DashboardProject /> },
-  { path: "/dashboard-nft", component: <DashboardNFT /> },
   { path: "/dashboard-job", component: <DashboardJob /> },
   { path: "/apps-calendar", component: <Calendar /> },
   { path: "/apps-calendar-month-grid", component: <MonthGrid /> },
@@ -308,24 +273,6 @@ const authProtectedRoutes = [
   { path: "/apps-tickets-list", component: <ListView /> },
   { path: "/apps-tickets-details", component: <TicketsDetails /> },
 
-  //transactions
-  { path: "/apps-crypto-transactions", component: <Transactions /> },
-  { path: "/apps-crypto-buy-sell", component: <BuySell /> },
-  { path: "/apps-crypto-orders", component: <CryproOrder /> },
-  { path: "/apps-crypto-wallet", component: <MyWallet /> },
-  { path: "/apps-crypto-ico", component: <ICOList /> },
-  { path: "/apps-crypto-kyc", component: <KYCVerification /> },
-
-  // NFT Marketplace
-  { path: "/apps-nft-marketplace", component: <Marketplace /> },
-  { path: "/apps-nft-collections", component: <Collections /> },
-  { path: "/apps-nft-create", component: <CreateNFT /> },
-  { path: "/apps-nft-creators", component: <Creators /> },
-  { path: "/apps-nft-explore", component: <ExploreNow /> },
-  { path: "/apps-nft-item-details", component: <ItemDetails /> },
-  { path: "/apps-nft-auction", component: <LiveAuction /> },
-  { path: "/apps-nft-ranking", component: <Ranking /> },
-  { path: "/apps-nft-wallet", component: <WalletConnect /> },
 
   //charts
   { path: "/charts-apex-line", component: <LineCharts /> },
@@ -408,6 +355,7 @@ const authProtectedRoutes = [
   { path: "/tables-listjs", component: <ListTables /> },
   { path: "/tables-react", component: <ReactTable /> },
 
+
   //Icons
   { path: "/icons-remix", component: <RemixIcons /> },
   { path: "/icons-boxicons", component: <BoxIcons /> },
@@ -433,17 +381,6 @@ const authProtectedRoutes = [
   { path: "/pages-sitemap", component: <SiteMap /> },
   { path: "/pages-search-results", component: <SearchResults /> },
 
-  //Job pages
-  { path: "/apps-job-statistics", component: <Statistics /> },
-  { path: "/apps-job-lists", component: <JobList /> },
-  { path: "/apps-job-grid-lists", component: <JobGrid /> },
-  { path: "/apps-job-details", component: <JobOverview /> },
-  { path: "/apps-job-candidate-lists", component: <CandidateList /> },
-  { path: "/apps-job-candidate-grid", component: <CandidateGrid /> },
-  { path: "/apps-job-application", component: <Application /> },
-  { path: "/apps-job-new", component: <NewJobs /> },
-  { path: "/apps-job-companies-lists", component: <CompaniesList /> },
-  { path: "/apps-job-categories", component: <JobCategories /> },
 
   { path: "/pages-privacy-policy", component: <PrivecyPolicy /> },
   { path: "/pages-terms-condition", component: <TermsCondition /> },

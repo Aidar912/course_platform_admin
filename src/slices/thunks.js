@@ -19,8 +19,6 @@ export * from "./projects/thunk";
 
 // Tasks
 export * from "./tasks/thunk";
-//Crypto
-export * from "./crypto/thunk";
 
 //TicketsList
 export * from "./tickets/thunk";
@@ -43,13 +41,7 @@ export * from "./dashboardCRM/thunk";
 export * from "./dashboardEcommerce/thunk";
 
 // Dashboard Cryto
-export * from "./dashboardCrypto/thunk";
-
-// Dashboard Cryto
 export * from "./dashboardProject/thunk";
-
-// Dashboard NFT
-export * from "./dashboardNFT/thunk";
 
 // Pages > Team
 export * from "./team/thunk";
@@ -59,9 +51,6 @@ export * from "./fileManager/thunk"
 
 // To do
 export * from "./todos/thunk"
-
-// Jobs
-export * from "./jobs/thunk";
 
 // API Key
 export * from "./apiKey/thunk";

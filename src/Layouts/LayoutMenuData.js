@@ -166,33 +166,9 @@ const Navdata = () => {
           parentId: "dashboard",
         },
         {
-          id: "ecommerce",
-          label: "Ecommerce",
-          link: "/dashboard",
-          parentId: "dashboard",
-        },
-        {
-          id: "crypto",
-          label: "Crypto",
-          link: "/dashboard-crypto",
-          parentId: "dashboard",
-        },
-        {
           id: "projects",
           label: "Projects",
           link: "/dashboard-projects",
-          parentId: "dashboard",
-        },
-        {
-          id: "nft",
-          label: "NFT",
-          link: "/dashboard-nft",
-          parentId: "dashboard",
-        },
-        {
-          id: "job",
-          label: "Job",
-          link: "/dashboard-job",
           parentId: "dashboard",
         },
       ],
@@ -1403,39 +1379,6 @@ const Navdata = () => {
           link: "/icons-crypto",
           parentId: "icons",
           // badgeName: "New", badgeColor: "danger"
-        },
-      ],
-    },
-    {
-      id: "maps",
-      label: "Maps",
-      icon: "ri-map-pin-line",
-      link: "/#",
-      click: function (e) {
-        e.preventDefault();
-        setIsMaps(!isMaps);
-        setIscurrentState("Maps");
-        updateIconSidebar(e);
-      },
-      stateVariables: isMaps,
-      subItems: [
-        {
-          id: "google",
-          label: "Google",
-          link: "/maps-google",
-          parentId: "maps",
-        },
-        {
-          id: "vector",
-          label: "Vector",
-          link: "/maps-vector",
-          parentId: "maps",
-        },
-        {
-          id: "leaflet",
-          label: "Leaflet",
-          link: "/maps-leaflet",
-          parentId: "maps",
         },
       ],
     },

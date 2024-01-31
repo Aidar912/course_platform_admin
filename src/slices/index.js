@@ -22,9 +22,6 @@ import ProjectsReducer from "./projects/reducer";
 // Tasks
 import TasksReducer from "./tasks/reducer";
 
-//Crypto
-import CryptoReducer from "./crypto/reducer";
-
 //TicketsList
 import TicketsReducer from "./tickets/reducer";
 //Crm
@@ -45,14 +42,10 @@ import DashboardCRMReducer from "./dashboardCRM/reducer";
 // Dashboard Ecommerce
 import DashboardEcommerceReducer from "./dashboardEcommerce/reducer";
 
-// Dashboard Cryto
-import DashboardCryptoReducer from "./dashboardCrypto/reducer";
 
 // Dashboard Cryto
 import DashboardProjectReducer from "./dashboardProject/reducer";
 
-// Dashboard NFT
-import DashboardNFTReducer from "./dashboardNFT/reducer";
 
 // Pages > Team
 import TeamDataReducer from "./team/reducer";
@@ -62,9 +55,6 @@ import FileManagerReducer from "./fileManager/reducer";
 
 // To do
 import TodosReducer from "./todos/reducer";
-
-// Job
-import JobReducer from "./jobs/reducer";
 
 // API Key
 import APIKeyReducer from "./apiKey/reducer";
@@ -80,7 +70,6 @@ const rootReducer = combineReducers({
     Projects: ProjectsReducer,
     Ecommerce: EcommerceReducer,
     Tasks: TasksReducer,
-    Crypto: CryptoReducer,
     Tickets: TicketsReducer,
     Crm: CrmReducer,
     Invoice: InvoiceReducer,
@@ -88,13 +77,10 @@ const rootReducer = combineReducers({
     DashboardAnalytics: DashboardAnalyticsReducer,
     DashboardCRM: DashboardCRMReducer,
     DashboardEcommerce: DashboardEcommerceReducer,
-    DashboardCrypto: DashboardCryptoReducer,
     DashboardProject: DashboardProjectReducer,
-    DashboardNFT: DashboardNFTReducer,
     Team: TeamDataReducer,
     FileManager: FileManagerReducer,
     Todos: TodosReducer,
-    Jobs: JobReducer,
     APIKey: APIKeyReducer
 });
 
